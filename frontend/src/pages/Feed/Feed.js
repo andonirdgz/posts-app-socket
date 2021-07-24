@@ -36,7 +36,9 @@ class Feed extends Component {
       .catch(this.catchError);
 
     this.loadPosts();
+
     const socket = openSocket("http://localhost:8080");
+
     socket.on("posts", (data) => {
       if (data.action === "create") {
         this.addPost(data.post);
@@ -181,7 +183,6 @@ class Feed extends Component {
         return res.json();
       })
       .then((resData) => {
-        console.log(resData);
         // const post = {
         //   _id: resData.post._id,
         //   title: resData.post.title,
