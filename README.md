@@ -3,7 +3,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-In the frontend/backend directory, you can run:
+### `npm install`
+Install all the dependencies.
+You have to run this before running the start command.
+
+After installing the dependencies, in the frontend/backend directory, you can run:
 
 ### `npm start`
 
